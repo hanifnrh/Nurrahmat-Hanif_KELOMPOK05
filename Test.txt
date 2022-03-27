@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class TugasModul4Kel05 {
+        public static void main(String[] args) {
+            System.out.println("Welcome to self-made daily task-list!");
+
+            String choice1, choice2, z; //pernyataan variabel
+            choice1 = "yes";
+            choice2 = "no";
+
+            while(true){ //looping while supaya program dapat terus berjalan
+                method();
+                Scanner sc = new Scanner(System.in); //input task yang ingin dijalankan
+                String x = sc.nextLine();
+                if (x.equals(choice1)) {
+                    System.out.println("Nice! You did great!");
+                }
+
+                else if (x.equals(choice2)) {
+                    System.out.println("Oh, do it next day maybe!");
+                }
+
+                else
+                {
+                    System.out.println("You did great for today!");
+                    System.out.println("Rate this program!");
+                    System.out.println("From 1-10 : ");
+
+                    method2("Thank you for rating us");
+
+                    System.out.println("Have a nice day!");
+                    System.exit(0);
+                }
+            }
+        }
+
+        static void method(){   //method return type tanpa parameter
+            System.out.println("Enter task (type anything if you're done) = ");
+            Scanner scan = new Scanner(System.in);
+            String a = scan.nextLine();
+            System.out.println("Now what you have to do is " + a);
+            System.out.println("Type yes if you have finished it, type no if you're not finished yet, type anything if you're done for today =");
+
+        }
+        static String method2(String a){
+            Scanner scan2 = new Scanner(System.in);
+            int f = scan2.nextInt();
+
+            if (f<5){
+                System.out.println("We'll improve soon!");
+            }
+            else {
+                System.out.println("Our pleasure!");
+            }
+            System.out.println(a);
+            return a;
+        }
+    }
