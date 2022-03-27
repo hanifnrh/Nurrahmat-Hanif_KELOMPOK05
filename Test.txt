@@ -1,65 +1,76 @@
 /*created by
-21120121130049	NURRAHMAT HANIF
-21120121140034	MUHAMMAD FAHRUR RIZA
-21120121120009	DESTIANA AYU ANGGRAINI
-21120119120033	Donito Akbar Labaya
-*/
+	21120121130049	NURRAHMAT HANIF
+	21120121140034	MUHAMMAD FAHRUR RIZA
+	21120121120009	DESTIANA AYU ANGGRAINI
+	21120119120033	Donito Akbar Labaya
+	*/
+	
 
-import java.util.Scanner;
+	import java.util.Scanner;
+	
 
-public class TugasModul4Kel05 {
-    public static void main(String[] args) {
-        System.out.println("Selamat datang di daftar tugas harian yang bosa anda dibuat sendiri!");
+	public class TugasModul4Kel05 {
+	    public static void main(String[] args) {
+	        System.out.println("Selamat datang di daftar tugas harian yang bisa Anda buat sendiri!");
+	
 
-        String choice1, choice2, z; //pernyataan variabel
-        choice1 = "ya";
-        choice2 = "tidak";
+	        String choice1, choice2, z; //pernyataan variabel
+	        choice1 = "ya";
+	        choice2 = "tidak";
+	
 
-        while(true){ //looping while supaya program dapat terus berjalan
-            method();
-            Scanner sc = new Scanner(System.in); //input task yang ingin dijalankan
-            String x = sc.nextLine();
-            if (x.equals(choice1)) {
-                System.out.println("Bagus! Anda melakukannya dengan baik!");
-            }
+	        while(true){ //looping while supaya program dapat terus berjalan
+	            method();
+	            Scanner sc = new Scanner(System.in);
+	            String x = sc.nextLine();
+	            if (x.equals(choice1)) {
+	                System.out.println("Bagus! Anda melakukannya dengan baik!");
+	            }
+	
 
-            else if (x.equals(choice2)) {
-                System.out.println("Oh, lakukan itu hari berikutnya mungkin!");
-            }
+	            else if (x.equals(choice2)) {
+	                System.out.println("Oh, lakukan itu hari berikutnya mungkin!");
+	            }
+	
 
-            else
-            {
-                System.out.println("Anda melakukannya dengan baik untuk hari ini!");
-                System.out.println("Nilai program ini ");
-                System.out.println("dari 1-10 : ");
+	            else
+	            {
+	                System.out.println("Anda melakukannya dengan baik untuk hari ini!");
+	                System.out.println("Nilai program ini ");
+	                System.out.println("dari 1-10 : ");
+	
 
-                function("Terima kasih telah menilai kami");
+	                function("Terima kasih telah menilai kami");
+	
 
-                System.out.println("Semoga harimu menyenangkan!");
-                System.exit(0);
-            }
-        }
-    }
+	                System.out.println("Semoga harimu menyenangkan!");
+	                System.exit(0);
+	            }
+	        }
+	    }
+	
 
-    static void method(){   //method return type tanpa parameter
-        System.out.println("Masukkan tugas (ketik apa saja jika sudah selesai) =");
-        Scanner scan = new Scanner(System.in);
-        String a = scan.nextLine();
-        System.out.println("Sekarang yang harus kamu lakukan adalah" + a);
-        System.out.println("Ketik ya jika sudah selesai ketik no jika belum selesai ketik apa saja jika sudah selesai untuk hari ini =");
+	    static void method(){   //method non return type tanpa parameter
+	        System.out.println("Masukkan tugas (ketik apa saja jika sudah selesai) =");
+	        Scanner scan = new Scanner(System.in);
+	        String a = scan.nextLine();
+	        System.out.println("Sekarang yang harus kamu lakukan adalah " + a);
+	        System.out.println("Ketik ya jika sudah selesai ketik no jika belum selesai ketik apa saja jika sudah selesai untuk hari ini =");
+	
 
-    }
-    static String function(String a){
-        Scanner scan2 = new Scanner(System.in);
-        int f = scan2.nextInt();
+	    }
+	    static String function(String a){ //method return type berparameter
+	        Scanner scan2 = new Scanner(System.in);
+	        int f = scan2.nextInt();
+	
 
-        if (f<5){
-            System.out.println("Kami akan segera memperbaiki");
-        }
-        else {
-            System.out.println("saya senang bisa membantu anda ");
-        }
-        System.out.println(a);
-        return a;
-    }
-}
+	        if (f<5){
+	            System.out.println("Kami akan segera memperbaiki");
+	        }
+	        else {
+	            System.out.println("saya senang bisa membantu anda ");
+	        }
+	        System.out.println(a);
+	        return a;
+	    }
+	}
