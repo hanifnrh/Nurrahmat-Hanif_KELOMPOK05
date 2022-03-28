@@ -55,7 +55,7 @@
 	        Scanner scan = new Scanner(System.in);
 	        String a = scan.nextLine();
 	        System.out.println("Sekarang yang harus kamu lakukan adalah " + a);
-	        System.out.println("Ketik ya jika sudah selesai ketik no jika belum selesai ketik apa saja jika sudah selesai untuk hari ini =");
+	        System.out.println("Ketik ya jika sudah selesai ketik tidak jika belum selesai ketik apa saja jika sudah selesai untuk hari ini =");
 	
 
 	    }
